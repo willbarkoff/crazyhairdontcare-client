@@ -26,7 +26,7 @@ interface VoteScreenState {
 interface contestantsResponse {
 	status: string
 	error?: string
-	message: string
+	message: string[]
 	contestants: contestant[]
 }
 
@@ -60,7 +60,9 @@ export default class VoteScreen extends React.Component<VoteScreenProps, VoteScr
 		}
 		return <div className="voting">
 			<h1 className="votingHeader">Vote for the best Corona cut!</h1>
-			{!this.state.isLoading && <p>{this.state.data!.message}</p>}
+			{!this.state.isLoading && <p>{this.state.data!.message.map((line, i) => {
+				return <p key={i}>{line}</p>
+			})}</p>}
 			<img className="fire" src={fireGif} />
 			{body}
 		</div>
