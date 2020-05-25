@@ -1,0 +1,27 @@
+.contestantTile
+	padding 10px
+
+	.contestantPhoto
+		width calc(100% - 10px)
+		box-shadow 15px 15px 0px 5px green
+		margin-bottom 20px
+
+	.contestantPhoto:hover
+		animation cycle-box-shadow .5s infinite
+
+@keyframes cycle-box-shadow
+	0%
+		box-shadow 15px 15px 0px 5px red
+	14%
+		box-shadow 15px 15px 0px 5px orange 
+	28%
+		box-shadow 15px 15px 0px 5px yellow
+	42%
+		box-shadow 15px 15px 0px 5px green
+	56%
+		box-shadow 15px 15px 0px 5px blue
+	70%
+		box-shadow 15px 15px 0px 5px indigo 
+	84%
+		box-shadow 15px 15px 0px 5px violet
+

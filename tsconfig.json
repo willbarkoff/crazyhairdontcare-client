@@ -10,6 +10,9 @@
 		"target": "es5",
 		"allowJs": true,
 		"jsx": "react",
+		"lib": [
+			"ES2015"
+		]
 	},
 	"include": [
 		"./src/**/*"
