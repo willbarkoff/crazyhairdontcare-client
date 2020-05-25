@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { contestant } from '../VoteScreen';
 
-import './voteTile.styl'
+import './VoteTile.styl'
 import api from '../../api';
 
 interface VoteTileProps {
