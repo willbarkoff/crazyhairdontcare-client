@@ -26,6 +26,7 @@ interface VoteScreenState {
 interface contestantsResponse {
 	status: string
 	error?: string
+	message: string
 	contestants: contestant[]
 }
 
@@ -59,7 +60,7 @@ export default class VoteScreen extends React.Component<VoteScreenProps, VoteScr
 		}
 		return <div className="voting">
 			<h1 className="votingHeader">Vote for the best Corona cut!</h1>
-			<p>Vote as many times as you'd like!</p>
+			{!this.state.isLoading && <p>{this.state.data!.message}</p>}
 			<img className="fire" src={fireGif} />
 			{body}
 		</div>
