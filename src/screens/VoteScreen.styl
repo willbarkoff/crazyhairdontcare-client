@@ -1,0 +1,22 @@
+.voting
+	max-width 800px
+	margin auto
+	text-align center
+	
+	.votingHeader
+		animation blink-bg .5s step-start infinite
+		padding 10px
+
+	.fire
+		height 30px
+		width 100%
+
+
+@keyframes blink-bg
+	50%
+		background-color blue
+
+@media (prefers-reduced-motion: reduce)
+	.voting
+		animation none
+		background-color blue
