@@ -15,6 +15,7 @@ export interface contestant {
 	name: string
 	photoURL: string
 	originalPhotoURL: string
+	cutName: string
 }
 
 interface VoteScreenState {

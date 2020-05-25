@@ -61,6 +61,7 @@ export default class VoteTile extends React.Component<VoteTileProps, VoteTileSta
 		return <div className="contestantTile">
 			<img src={this.state.currentUrl} className="contestantPhoto" onMouseEnter={this.mouseEnter.bind(this)} onMouseLeave={this.mouseExit.bind(this)} />
 			<h1>{this.props.data.name}</h1>
+			<h2>{this.props.data.cutName}</h2>
 			{this.state.voteSucceeded && <h3>Vote succeded!</h3>}
 			<button onClick={this.vote.bind(this)} disabled={this.state.isLoading}>{this.state.isLoading ? "Submitting..." : "Vote!"}</button>
 		</div>
