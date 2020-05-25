@@ -25,7 +25,7 @@ export default class PasswordScreen extends React.Component<PasswordScreenProps,
 	}
 
 	async load() {
-		let response = await api.GET("/contestants")
+		let response = await api.GET("contestants")
 		if (response.status != "error") {
 			// we're already logged in!
 			this.props.changeScreen("voting")
