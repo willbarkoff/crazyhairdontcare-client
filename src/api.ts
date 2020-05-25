@@ -1,4 +1,4 @@
-const baseurl = "http://localhost:8080/"
+const baseurl = "https://api.crazyhairdontcare.com/"
 
 async function GET(endpoint: string) {
 	let response = await fetch(baseurl + endpoint, {
